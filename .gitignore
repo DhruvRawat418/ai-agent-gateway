@@ -1,0 +1,7 @@
+# Environments
+.env
+venv/
+__pycache__/
+
+# AWS Keys (just in case)
+*.pem
