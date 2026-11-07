@@ -5,3 +5,13 @@ __pycache__/
 
 # AWS Keys (just in case)
 *.pem
+
+# Local artifacts and credential variants
+.DS_Store
+.vscode/
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+gateway-duckdns.json

@@ -1,0 +1,15 @@
+[Unit]
+Description=Update gateway DuckDNS address from EC2 IMDSv2
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/lib/gateway/update_duckdns.py
+User=root
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+TimeoutStartSec=60

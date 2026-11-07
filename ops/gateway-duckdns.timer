@@ -1,0 +1,10 @@
+[Unit]
+Description=Refresh gateway DNS after boot and every five minutes
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=5min
+Unit=gateway-duckdns.service
+
+[Install]
+WantedBy=timers.target

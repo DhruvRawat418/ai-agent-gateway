@@ -1,2 +1,15 @@
 venv/
 __pycache__/
+.env
+.env.*
+!.env.example
+.git/
+*.pem
+*.db
+.DS_Store
+
+# Local editor state and runtime credentials
+.vscode/
+*.sqlite
+*.sqlite3
+gateway-duckdns.json
